@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    /* font-size: 10px; */
+    /* 10px / 16px = 0.625 = 62.5% */
+    /* Percentage of user's browser font-size setting */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
