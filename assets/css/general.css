@@ -38,3 +38,13 @@ a:visited {
 li {
     list-style: none;
 }
+
+/* ==================== 
+    Common Style
+=======================*/
+
+.container {
+    max-width: 144rem;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
