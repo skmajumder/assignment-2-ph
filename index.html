@@ -21,13 +21,12 @@
 
 <body>
     <!-- Header -->
-    <header class="header">
+    <header class="header d-flex">
         <a href="#" class="logo">
             <h2 class="logo--text">G3 Architects</h2>
         </a>
-
         <nav class="navigation">
-            <ul class="nav-list">
+            <ul class="nav-list d-flex">
                 <li><a href="#" class="nav-link">Home</a></li>
                 <li><a href="#" class="nav-link">About</a></li>
                 <li><a href="#" class="nav-link">Contact Us</a></li>
@@ -41,9 +40,9 @@
     <main class="main-section">
         <!-- Section Banner -->
         <section class="section-banner">
-            <div class="banner">
+            <div class="banner d-flex">
                 <div class="banner--text-box">
-                    <h1 class="headline-primary">Brand New Group of Architects</h1>
+                    <h1 class="headline-primary">Brand New <br> Group of Architects</h1>
                     <p class="banner--paragraph">
                         There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                         alteration in some form, by injected humour, or randomised words which don't look even
@@ -61,8 +60,8 @@
 
         <!-- Section Features -->
         <section class="section-feature">
-            <div class="container feature">
-                <div class="feature--images">
+            <div class="container feature d-flex">
+                <div class="feature--images d-grid">
                     <img src="assets/img/team1.png" alt="2 person meeting in a office" class="feature--single-img">
                     <img src="assets/img/team2.png" alt="successful architecture professionals in front of their office"
                         class="feature--single-img">
@@ -71,14 +70,15 @@
                         alt="2 person doing handshake after a successful meeting in a office"
                         class="feature--single-img">
                 </div>
-
                 <div class="feature--text-box">
                     <h2 class="headline-secondary">
-                        <span class="font-w-light">Quick list</span> of Our <span class="font-s-color">Features</span>
+                        <span class="font-w-semibold">Quick list</span> of Our <span
+                            class="font-s-color">Features</span>
                     </h2>
                     <p class="feature--description">There are many variations of passages of Lorem Ipsum available, but
                         the majority have suffered alteration in some form, by injected humour, or randomised words
                         which don't look even</p>
+                    <a href="#" class="btn btn-more">Explore More</a>
                 </div>
             </div>
         </section>
@@ -86,14 +86,14 @@
 
         <!-- Section Features Explore -->
         <section class="section-feature-explore">
-            <div class="container feature-explore">
+            <div class="container feature-explore d-flex">
                 <div class="feature-explore--info">
-                    <h2 class="headline-secondary">Features you will love & enjoy</h2>
+                    <h2 class="headline-secondary feature-explore--headline">Features you will love & enjoy</h2>
                     <p class="feature-explore--description">There are many variations of passages of Lorem Ipsum
                         available, but the majority have suffered alteration in some form, by injected humour, or
                         randomised words
                         which don't look even</p>
-                    <div class="feature-explore--lists">
+                    <div class="feature-explore--lists d-flex">
                         <article class="feature-explore--single">
                             <p class="feature-explore--single-name">Desktop & Mobile Version</p>
                             <p class="feature-explore--single-description">
@@ -126,9 +126,10 @@
 
                 <div class="feature-explore--thumbnail">
                     <img src="assets/img/architect.png" alt="" class="thumbnail--cover">
-                    <a href="#" class="btn btn-experience">
+                    <a href="#" class="btn btn-experience btn-absolute">
                         10+ Year
-                        <span class="font-w-light word-break">Experience</span>
+                        <br>
+                        <span class="font-w-semibold font-s-small">Experience</span>
                     </a>
                 </div>
             </div>
@@ -144,7 +145,7 @@
                     alteration.
                 </p>
             </div>
-            <div class="container achievements">
+            <div class="container achievements d-grid">
                 <div class="achievement">
                     <img src="assets/img/icons/ribon.png" alt="Ribon icon" class="achievement--icon">
                     <p class="achievement--count">54</p>
@@ -172,9 +173,9 @@
         <!-- Section Creative Project -->
         <section class="section-creative-project">
             <div class="container creative-project">
-                <h2 class="headline-secondary">We provide creative designer for your home project</h2>
+                <h2 class="headline-secondary project-headline">We provide creative designer for your home project</h2>
             </div>
-            <div class="container projects">
+            <div class="container projects d-grid">
                 <div class="project">
                     <i class="fa fa-building-o" aria-hidden="true"></i>
                     <p class="project--name">Architecture</p>
@@ -228,16 +229,15 @@
             </div>
         </section>
         <!-- /- Section CTA -->
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="container">
-                <p class="copyright-text">All rights reserved copyright@2023 startup landing page design</p>
-            </div>
-        </footer>
-        <!-- /- Footer -->
     </main>
-    <!-- /- Main -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright-text">All rights reserved copyright@2023 startup landing page design</p>
+        </div>
+    </footer>
+    <!-- /- Footer -->
 </body>
 
 </html>
