@@ -4,37 +4,37 @@
 /* BELOW 1344px (Smaller desktops) */
 /**************************/
 
-@media (max-width: 84em) {}
+@media (max-width: 84em) {
+    .container {
+        max-width: 120rem;
+        padding: 0 3rem;
+    }
+
+    .header {
+        padding: 0 3rem;
+    }
+}
 
 /**************************/
 /* BELOW 1200px (Landscape Tablets) */
 /**************************/
 
-@media (max-width: 75em) {
-
-}
+@media (max-width: 75em) {}
 
 /**************************/
 /* BELOW 944px (Tablets) */
 /**************************/
 
-@media (max-width: 59em) {
-
-    
-}
+@media (max-width: 59em) {}
 
 /**************************/
 /* BELOW 704px (Smaller tablets) */
 /**************************/
 
-@media (max-width: 44em) {
-    
-}
+@media (max-width: 44em) {}
 
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
 
-@media (max-width: 34em) {
-	
-}
+@media (max-width: 34em) {}

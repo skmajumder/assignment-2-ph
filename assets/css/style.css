@@ -2,6 +2,7 @@
     1. Header
         # Logo
         # Navigation
+        # Mobile Button
 
     2. Main
         -- 2.1 Section Banner
@@ -70,6 +71,17 @@
     font-weight: 500;
     line-height: 1.6;
     color: var(--color-nav-text);
+}
+
+.btn-mobile-nav {
+    border: none;
+    background: none;
+    cursor: pointer;
+    display: none;
+}
+
+.btn-nav {
+    font-size: 2rem;
 }
 
 /* 2.1 Section Banner */
@@ -327,13 +339,13 @@
 .section-cta {
     background-color: var(--color-footer-bg);
     margin-bottom: 8rem;
+    padding: 4rem 2rem;
 }
 
 .cta {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 6rem;
     column-gap: 3.6rem;
 }
 
