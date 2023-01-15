@@ -81,7 +81,7 @@
 }
 
 .btn-nav {
-    font-size: 2rem;
+    font-size: 2.3rem;
 }
 
 /* 2.1 Section Banner */
@@ -124,6 +124,7 @@
 }
 
 .feature {
+    grid-template-columns: repeat(2, 1fr);
     gap: 7rem;
     align-items: center;
     justify-content: center;
@@ -145,6 +146,7 @@
 }
 
 .feature-explore {
+    grid-template-columns: repeat(2, 1fr);
     gap: 5.4rem;
     align-items: center;
     justify-content: space-around;

@@ -19,22 +19,157 @@
 /* BELOW 1200px (Landscape Tablets) */
 /**************************/
 
-@media (max-width: 75em) {}
+@media (max-width: 75em) {
+
+    /* Root Font is 9 */
+    html {
+        font-size: 56.25%;
+    }
+
+    .headline-primary {
+        font-size: 5.5rem;
+    }
+
+    .headline-secondary {
+        font-size: 4rem;
+    }
+
+    .feature--single-img {
+        width: 100%;
+    }
+
+    .thumbnail--cover {
+        width: 100%;
+    }
+}
 
 /**************************/
 /* BELOW 944px (Tablets) */
 /**************************/
 
-@media (max-width: 59em) {}
+@media (max-width: 59em) {
+    html {
+        /* Root Font is 8 */
+        font-size: 50%;
+    }
+
+    .navigation {
+        display: none;
+    }
+
+    .btn-mobile-nav {
+        display: block;
+        z-index: 9999;
+    }
+
+    .headline-primary {
+        font-size: 5rem;
+    }
+
+    .headline-secondary {
+        font-size: 3.6rem;
+    }
+
+    .feature,
+    .feature-explore {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .feature-explore--single {
+        padding: 4rem 3rem;
+    }
+
+    .feature-explore--lists {
+        gap: 3rem;
+    }
+
+    .achievements {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: normal;
+        gap: 5rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .achievement--count {
+        font-size: 3rem;
+    }
+
+    .achievement--info {
+        font-size: 1.6rem;
+    }
+
+    .sponsor-company--img {
+        height: 3.5rem;
+    }
+
+    .section-feature-explore {
+        margin-bottom: 12rem;
+    }
+
+    .facts--details,
+    .sponsor--info,
+    .project-headline {
+        max-width: 100%;
+    }
+}
 
 /**************************/
 /* BELOW 704px (Smaller tablets) */
 /**************************/
 
-@media (max-width: 44em) {}
+@media (max-width: 44em) {
+    .banner--text-box {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
+    .headline-primary {
+        font-size: 4rem;
+    }
+
+    .headline-secondary {
+        font-size: 3rem;
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta {
+        grid-template-columns: 1fr;
+    }
+
+    .sponsor-company {
+        gap: 3rem;
+        justify-content: center;
+    }
+
+    .sponsor-company--img {
+        height: 4rem;
+    }
+}
 
 /**************************/
 /* BELOW 544px (Phones) */
 /**************************/
 
-@media (max-width: 34em) {}
+@media (max-width: 34em) {
+    .headline-primary {
+        font-size: 3.4rem;
+    }
+
+    .headline-secondary {
+        font-size: 2.6rem;
+    }
+
+    .achievements,
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+
+    .sponsor-company--img {
+        height: 3rem;
+    }
+}
