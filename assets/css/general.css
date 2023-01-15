@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 
 *,
@@ -32,6 +33,7 @@ body {
     font-weight: 400;
     font-family: 'Work Sans', sans-serif;
     color: var(--color-primary-text);
+    position: relative;
 }
 
 input,

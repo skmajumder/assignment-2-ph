@@ -63,6 +63,7 @@
     align-items: center;
     justify-content: center;
     gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .nav-link:link,
@@ -73,12 +74,12 @@
     color: var(--color-nav-text);
 }
 
-.btn-mobile-nav {
+/* .btn-mobile-nav {
     border: none;
     background: none;
     cursor: pointer;
     display: none;
-}
+} */
 
 .btn-nav {
     font-size: 2.3rem;
@@ -169,7 +170,7 @@
 }
 
 .feature-explore--lists {
-    flex-direction: column;
+    grid-template-columns: 1fr;
     gap: 2rem;
 }
 
@@ -205,8 +206,8 @@
 
 .btn-absolute {
     position: absolute;
-    left: 6%;
-    bottom: -6%;
+    left: 2%;
+    bottom: -2%;
 }
 
 /* 2.4 Section Some Facts */
@@ -237,14 +238,14 @@
     border-radius: 1px;
     padding: 4.5rem 3.6rem;
     box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
-    transition: all 400ms;
+    transition: all .5s ease-in-out;
     position: relative;
 }
 
 .achievement:hover {
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-    transform: translateY(-5%);
+    transform: rotate(360deg);
 }
 
 .achievement:hover::before {
