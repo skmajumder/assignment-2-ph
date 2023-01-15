@@ -125,10 +125,74 @@ li {
     padding: 2.5rem 3rem;
 }
 
+.btn-transparent:link,
+.btn-transparent:visited {
+    background-color: transparent;
+    color: var(--color-btn);
+    border: 1px solid var(--color-btn);
+    border-radius: 1px;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.btn-transparent::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: var(--color-btn);
+}
+
+.btn-transparent:hover,
+.btn-transparent:active {
+    background-color: var(--color-btn);
+    color: var(--color-white);
+}
+
+.btn-cta:link,
+.btn-cta:visited {
+    background-color: var(--color-btn);
+    color: var(--color-white);
+    border: 1px solid var(--color-btn);
+    border-radius: 1px;
+    padding: 1.5rem 2rem;
+    font-size: 1.4rem;
+}
+
 .feature--description,
 .feature-explore--description,
-.facts--details {
+.facts--details,
+.sponsor--info,
+.cta-info {
     font-size: 1.6rem;
     line-height: 1.6;
     margin-bottom: 3rem;
+}
+
+/* Animation */
+@keyframes shake {
+
+    10%,
+    90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+        transform: translate3d(4px, 0, 0);
+    }
 }

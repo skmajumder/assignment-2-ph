@@ -23,11 +23,17 @@
         -- 2.5 Section Creative Project
             # Projects
 
-        -- 2.6 Section Sponsors
+        -- 2.6 Section CTA
+            # CTA Headline
+            # CTA Text
 
-        -- 2.7 Section CTA
+        -- 2.7 Section Sponsors
+            # Sponsor Headline
+            # Sponsor Info
+            # Sponsor Company Logo
 
     3. Footer
+        # Copyright Text
 **************/
 
 /*  1. Header */
@@ -158,6 +164,12 @@
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     padding: 2rem 3rem;
+    transition: all 300ms;
+}
+
+.feature-explore--single:hover {
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
+    transform: translateY(-2%);
 }
 
 .feature-explore--single-name {
@@ -208,13 +220,36 @@
     align-items: center;
     justify-content: center;
     gap: 5px;
-    border: 1px solid #FF900E;
-    border-radius: 8px;
+    border-radius: 1px;
     padding: 4.5rem 3.6rem;
+    box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+    transition: all 400ms;
+    position: relative;
 }
 
 .achievement:hover {
     cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    transform: translateY(-5%);
+}
+
+.achievement:hover::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #FF900E;
+}
+
+.achievement:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 2.1px;
+    width: 100%;
+    background-color: #FF900E;
 }
 
 .achievement--count {
@@ -254,11 +289,21 @@
 .project {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
+    padding: 2rem;
+    align-items: flex-start;
+    justify-content: stretch;
+    transition: all 300ms;
 }
 
-.project i.fa {
-    font-size: 2.4rem;
+.project:hover {
+    box-shadow: rgb(0 0 0 / 15%) 1.95px 1.95px 2.6px;
+    border-bottom: 1px solid rgba(255, 143, 14, 0.8);
+    transform: translateY(-2%);
+}
+
+.project--icon {
+    font-size: 2.5rem;
     color: var(--color-btn);
 }
 
@@ -271,4 +316,81 @@
 .project--details {
     font-size: 1.4rem;
     line-height: 1.6;
+}
+
+.btn-transparent i.fa {
+    margin-left: 5px;
+}
+
+/* 2.6 Section CTA */
+
+.section-cta {
+    background-color: var(--color-footer-bg);
+    margin-bottom: 8rem;
+}
+
+.cta {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 6rem;
+    column-gap: 3.6rem;
+}
+
+.cta--text {
+    padding: 1.5rem 0px;
+}
+
+.btn-cta i.fa {
+    margin-left: 5px;
+}
+
+/* 2.7 Section Sponsors */
+
+.section-sponsors {
+    margin-bottom: 8rem;
+}
+
+.sponsor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.sponsor--info {
+    max-width: 47%;
+}
+
+.sponsor-company {
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sponsor-company--img {
+    filter: brightness(0);
+    opacity: 50%;
+    transition: all 300ms;
+}
+
+.sponsor-company--img:hover {
+    filter: none;
+    opacity: 100%;
+}
+
+/* 3. Footer */
+
+.footer {
+    background-color: var(--color-footer-bg);
+}
+
+.copyright-text {
+    font-size: 2rem;
+    line-height: 1.4;
+    padding: 3.8rem 0;
+    text-align: center;
 }
