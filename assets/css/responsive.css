@@ -138,6 +138,10 @@
         background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
         left: 50%;
     }
+
+    .testimonial--wrapper {
+        grid-template-columns: 1.2fr 2fr;
+    }
 }
 
 /**************************/
@@ -174,6 +178,18 @@
 
     .sponsor-company--img {
         height: 4rem;
+    }
+
+    .testimonial--wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .client:last-child{
+        margin-bottom: 3rem;
+    }
+
+    .testimonial--text {
+        padding-left: 0;
     }
 }
 
